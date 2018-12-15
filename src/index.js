@@ -7,7 +7,8 @@ import SimplerComponent from './components/SimplerComponent';
 ReactDOM.render(
   <div>
     <SimpleComponent />
-    <SimplerComponent handleClick={undefined} />
+    <SimplerComponent handleClick={(e) => {
+        e.target.style.color = '#F00'}} />
   </div>,
   document.getElementById('root')
 );
